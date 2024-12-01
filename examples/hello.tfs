@@ -1,0 +1,14 @@
+/_\ Exemple de code TriforceScript
+
+/_\ Data Management
+    data :: [string] -> "Monde"
+    greeting :: [string] -> "Bonjour"
+
+/_\ Operations
+    message :: [string] -> greeting -> data -> "!"
+
+/_\ Flow Control
+if -> data == "Monde" => {
+    message :: message -> "Bienvenue dans TriforceScript!"
+    write(message)
+}

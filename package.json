@@ -1,0 +1,45 @@
+{
+  "name": "triforcescript",
+  "version": "0.1.0",
+  "description": "Un langage de programmation révolutionnaire pour le développement front-end moderne",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "dev": "nodemon src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "tfs": "npm run build && node dist/index.js",
+    "tfs:watch": "nodemon --watch src -e ts --exec \"npm run tfs\"",
+    "tfs:clean": "rimraf dist output.js",
+    "tfs:example": "npm run tfs examples/hello.tfs"
+  },
+  "keywords": [
+    "programming-language",
+    "frontend",
+    "compiler",
+    "typescript",
+    "javascript",
+    "wasm"
+  ],
+  "author": "TriforceScript Team",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "nodemon": "^3.0.0",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.0.0"
+  }
+}
