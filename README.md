@@ -1,1 +1,1 @@
-# TriforceLang
+# TriforceScript
